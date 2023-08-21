@@ -43,7 +43,7 @@ st.set_page_config( layout = "wide",
 START=datetime.datetime(2009,1,1)
 TODAY=datetime.date.today()
 style.use('dark_background')
-df=pd.read_csv('C:/Users/Lenovo/Downloads/listing_status.csv')
+df=pd.read_csv('./listing_status.csv')
 stock=df['symbol']
 stocks =list(stock)
 st.title("Stock Prediction")
