@@ -35,7 +35,7 @@ html="""
    
       </body>
            """
-def main():
+
        
     st.set_page_config( layout = "wide",
     initial_sidebar_state = "collapsed",
@@ -101,6 +101,3 @@ def main():
     )
     st.write(fig2)
     
-
-if __name__=="__main__":
-    main()   
