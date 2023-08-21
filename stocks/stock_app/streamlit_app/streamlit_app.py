@@ -6,7 +6,7 @@ from prophet import Prophet
 from prophet.plot import plot_plotly,plot_components_plotly
 from matplotlib import style
 import pandas as pd
-
+import os
 html="""
            <head>
     <title>Stocks Forecasting</title>
@@ -43,6 +43,7 @@ st.set_page_config( layout = "wide",
 START=datetime.datetime(2009,1,1)
 TODAY=datetime.date.today()
 style.use('dark_background')
+print(os.getcwd())
 df=pd.read_csv('./listing_status.csv')
 stock=df['symbol']
 stocks =list(stock)
