@@ -1,1 +1,6 @@
-
+prophet
+yfinance
+datetime
+pandas
+matplotlib
+plotly
