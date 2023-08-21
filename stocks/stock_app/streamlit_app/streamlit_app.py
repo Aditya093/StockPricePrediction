@@ -44,7 +44,7 @@ START=datetime.datetime(2009,1,1)
 TODAY=datetime.date.today()
 style.use('dark_background')
 print(os.getcwd())
-df=pd.read_csv('./listing_status.csv')
+df=pd.read_csv('stocks/stock_app/streamlit_app/listing_status.csv')
 stock=df['symbol']
 stocks =list(stock)
 st.title("Stock Prediction")
